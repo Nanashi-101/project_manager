@@ -69,7 +69,7 @@ function App() {
       maxWidth: "800px",
       display: "flex",
       flexDirection: "column",
-      gap: "2rem",
+      gap: "1.7rem",
       margin: "0 auto",
       padding: "0 40px",
       alignItems: "center"
