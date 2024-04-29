@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 html{
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-behavior: smooth !important;
+  --line-color: #e5e7eb;
+}
+
+html.dark{
+  scroll-behavior: smooth !important;
+  --line-color: rgba(255,255,255,0.15);
+  --line-border-radius: 50px;
 }

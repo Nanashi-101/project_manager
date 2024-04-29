@@ -1,10 +1,13 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+import { MdOutlineWork } from "react-icons/md";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaUserGraduate } from "react-icons/fa";
 import krypto from "@/public/Krypto.png";
 import nexcapstudio from "@/public/nexcapstudio.png";
 import ImageGallery from "@/public/image gallery.png";
+import WillBeThere from "@/public/willbethere.png";
+import { FaLaptopCode } from "react-icons/fa6";
 
 export const links = [
   {
@@ -12,20 +15,20 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Contact",
@@ -35,58 +38,77 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Highschool",
+    location: "West Bengal, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I graduated from highschool. I immediately decided to start working to become a front-end developer.",
+    icon: React.createElement(FaUserGraduate),
+    date: "2023",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Warsaw, Poland",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I worked as a front-end developer for 1 month for some of my friends who were starting a new project. I used HTML, CSS and JavaScript(React) to build the websites for them.",
+    icon: React.createElement(MdOutlineWork),
+    date: "2023 - 2024",
+  },
+  {
+    title: "Front-end Developer",
+    location: "Warsaw, Poland",
+    description:
+      "I joined a hackathon hosted by AritDeveloper, from Nigeria, where I worked as a Front-end developer. I used React, Tailwind and Framer Motion to build the projects and served as an acting QA, near the end of the contest for my team.",
+    icon: React.createElement(FaLaptopCode),
+    date: "03/2024 - 04/2024",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Warsaw, Poland",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now upgrading my skills to become a full-stack developer. I'm learning Node.js, Express and MongoDB to become a full-stack developer. I'm also learning TypeScript to improve my JavaScript skills.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "€rypto",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I worked on this front-end project as my first react project. It's just a one page prototype for a crypto website.",
+    tags: ["React", "JavaScript", "Tailwind", "Framer"],
     imageUrl: krypto,
+    projectUrl: "https://responsive-site-inky.vercel.app",
   },
   {
-    title: "rmtDev",
+    title: "NeXCap Studio",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "This is a front-end project that I made for one of friend, who wants to pursue a career in photography. It's a portfolio website for him to attract clients.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
     imageUrl: nexcapstudio,
+    projectUrl: "https://photography-site-gilt.vercel.app",
   },
   {
-    title: "Word Analytics",
+    title: "Image Gallery",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "This is very basic Image Gallery project that I made to learn how to use tailwind to make creative designs. I also used framer motion to add some animations.",
+    tags: ["React", "Tailwind", "Framer"],
     imageUrl: ImageGallery,
+    projectUrl: "https://github.com/Nanashi-101/image_gallery.git",
+  },
+  {
+    title: "Will be there",
+    description:
+      "This is a hackathon project that I made with my friends. It's a RSVP website that helps people to host and join events. I worked as the lead frontend dev in this project. ",
+    tags: ["React", "Tailwind", "Framer"],
+    imageUrl: WillBeThere,
+    projectUrl: "https://github.com/Nanashi-101/AritDeveloperHackathon-group19-starred",
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
-  "CSS",
+  "SCSS",
   "JavaScript",
   "TypeScript",
   "React",
@@ -94,14 +116,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Redux",
   "Framer Motion",
 ] as const;
