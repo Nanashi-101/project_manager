@@ -1,4 +1,5 @@
 import AddTask from "./components/addTodoTask"
+import EditTodoModal from "./components/editTodoModal"
 import Header from "./components/header"
 import TodoList from "./components/todoList"
 
@@ -10,6 +11,7 @@ function App() {
         <Header headerText={"Todo - Manager"}/>
         <AddTask />
         <TodoList />
+        <EditTodoModal />
       </div>
     </div>
   )
