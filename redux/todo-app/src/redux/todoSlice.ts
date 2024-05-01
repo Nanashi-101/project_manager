@@ -10,11 +10,13 @@ type todo = {
 
 interface todoSliceState {
     todos: todo[];
+    completedTodos: todo[];
 }
 
 // The initial state of the slice is defined as an object
 const initialState: todoSliceState = {
-    todos: []
+    todos: [],
+    completedTodos: []
 }
 
 // The slice is created using the createSlice function
@@ -40,9 +42,27 @@ const todoSlice = createSlice({
                 }
                 return todo;
             })
+        },
+        completeTodo: (state, action) => {
+            let finishedTodo = {};
+            state.todos = state.todos.map(todo => {
+                if (todo.id === action.payload.id) {
+                    finishedTodo = {
+                        ...todo,
+                        completed: !todo.completed
+                    }
+                    return {
+                        ...todo,
+                        completed: !todo.completed
+                    }
+                }
+                return todo;
+            })
+            state.completedTodos.push(finishedTodo as todo);
+            state.todos = state.todos.filter(todo => todo.id !== action.payload.id);
         }
     }
 });
 
-export const { addTodo, removeTodo } = todoSlice.actions;
+export const { addTodo, removeTodo, updateTodo, completeTodo } = todoSlice.actions;
 export const todoReducer = todoSlice.reducer;
