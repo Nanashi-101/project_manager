@@ -2,7 +2,7 @@
 
 import { useActiveSection } from '@/context/active-section-context';
 import { useActiveSectionView } from '@/hooks/hooks';
-import myimg from "@/public/me.jpg";
+import myimg from "@/public/Intro_me.png";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ const Intro = () => {
 
 
     return (
-        <section ref={ref} className='mb-28 pt-[5rem] max-w-[50rem] text-center sm:mb-0 scroll-mt-[13.5rem]' id='home'>
+        <section ref={ref} className='mb-28 pt-[4rem] max-w-[50rem] text-center sm:mb-0 scroll-mt-[13.5rem]' id='home'>
             <div className='flex flex-col items-center justify-center '>
                 <div className="relative">
                     <motion.div
@@ -26,8 +26,8 @@ const Intro = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ type: "tween", duration: 0.2 }}
                     >
-                        <Image src={myimg} alt='Me' width={150} height={150}
-                            quality="95" priority={true} className='h-24 w-24 rounded-full border-[0.25rem] border-white/80 object-cover shadow-xl' />
+                        <Image src={myimg} alt='Me' width={155} height={155}
+                            quality="100" priority={true} className='h-28 w-28 rounded-full border-[0.14rem] border-white/70 object-cover shadow-xl' />
                     </motion.div>
                     <motion.span
                         initial={{ opacity: 0, scale: 0 }}
@@ -45,9 +45,9 @@ const Intro = () => {
                 <span className="">Hello, I'm <span className="font-bold">Soumyadip</span>. </span>{" "}
                 I am a{" "} <span className="font-bold italic">{" "}Software Developer. </span>{" "}
             </motion.h1>
-            <motion.p className='mb-[4rem] text-3xl sm:text-5xl my-4' initial={{ opacity: 0, y: 100 }}
+            <motion.p className='mb-[4rem] text-2xl sm:text-5xl my-4' initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}><span className=''>I work in</span>{" "}
+                transition={{ duration: 0.3 }}><span className=''><span className='font-semibold'>I</span> work in</span>{" "}
                 <ReactTyped
                     className='font-extrabold'
                     strings={["React{NextJS}", "Tailwindcss", "NodeJs", "Git", "MongoDB", "ExpressJs", "TypeScript", "JavaScript", "HTML", "CSS", "SASS"]}

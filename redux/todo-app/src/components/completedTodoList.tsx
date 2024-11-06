@@ -26,7 +26,7 @@ const CompletedTodoList = () => {
             <div className='flex flex-wrap max-w-[1000px] mx-auto my-24'>
                 {
                     (todoState.length === 0) 
-                    ? <h1 className='text-5xl font-bold text-gray-500/70'>No tasks yet</h1> 
+                    ? <h1 className='text-5xl font-bold text-gray-500/70'>No tasks completed yet</h1> 
                     : todoState.map((todo) => (
                         <div key={todo.id} className='relative mb-10 flex flex-col gap-5 w-[20rem] mx-auto border border-gray-500 p-5 rounded-lg bg-black text-white shadow-3xl backdrop:blur-sm'>
                             <div className='flex flex-col gap-5 text-left items-start justify-center'>

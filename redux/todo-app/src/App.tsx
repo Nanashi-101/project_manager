@@ -7,6 +7,7 @@ import Header from "./components/header"
 import Navigation from "./components/Navigation"
 import TodoList from "./components/todoList"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import UserAuthentication from "./components/UserAuth"
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,9 @@ const router = createBrowserRouter([
     element: (
       <React.Fragment>
         <Header headerText={"Todo - Manager"}/>
-        <AddTask />
-        <Navigation />
+        <UserAuthentication />
+        {/* <AddTask />
+        <Navigation /> */}
       </React.Fragment>
     )
   },

@@ -7,6 +7,7 @@ import krypto from "@/public/Krypto.png";
 import nexcapstudio from "@/public/nexcapstudio.png";
 import ImageGallery from "@/public/image gallery.png";
 import WillBeThere from "@/public/willbethere.png";
+import ChromaUI from "@/public/ChromaUi.png"
 import { FaLaptopCode } from "react-icons/fa6";
 
 export const links = [
@@ -73,6 +74,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "ChromaUI",
+    description:
+      "ChromaUI is a Digital marketplace built with React, Next.js, Tailwind CSS and Supabase. It's a full-stack project that I made to learn how to use Supabase as a backend service. It also uses Kinde for authentication of users",
+    tags: ["NextJs", "Tailwind", "Supabase", "Vercel"],
+    imageUrl: ChromaUI,
+    projectUrl: "https://chroma-ui-ecru.vercel.app",
+  },
+  {
     title: "€rypto",
     description:
       "I worked on this front-end project as my first react project. It's just a one page prototype for a crypto website.",
@@ -102,7 +111,8 @@ export const projectsData = [
       "This is a hackathon project that I made with my friends. It's a RSVP website that helps people to host and join events. I worked as the lead frontend dev in this project. ",
     tags: ["React", "Tailwind", "Framer"],
     imageUrl: WillBeThere,
-    projectUrl: "https://github.com/Nanashi-101/AritDeveloperHackathon-group19-starred",
+    projectUrl:
+      "https://github.com/Nanashi-101/AritDeveloperHackathon-group19-starred",
   },
 ] as const;
 
@@ -110,13 +120,9 @@ export const skillsData = [
   "HTML",
   "SCSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "MongoDB",
   "Express",
   "Redux",
   "Framer Motion",
